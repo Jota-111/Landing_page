@@ -1,0 +1,424 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #A31717;
+    color: #242424;
+    line-height: 1.6;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+:root{
+    --red: #A31717;
+    --red-dark: #8F1313;
+    --dark: #1E1E1E;
+    --white: #FFFFFF;
+    --footer-bg: #827876;
+    --cta-bg: #9C918D;
+    --text-light: rgba(255, 255, 255, 0.85);
+    --container: 1120px;
+}
+
+header,
+.caja1,
+.caja2,
+.caja3,
+.caja4{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav,
+.hero-container,
+.branding-container,
+.custom-container{
+    max-width: var(--container);
+    margin: 0 auto;
+}
+
+header{
+    background: var(--red);
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav p{
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links a{
+    color: #fff;
+    font-size: .95rem;
+    font-weight: 400;
+    position: relative;
+    transition: opacity .25s ease;
+}
+
+.nav-links a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .25s ease;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+.caja1{
+    background: var(--red);
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.texto1{
+    max-width: 540px;
+}
+
+.texto1 h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.texto1 p{
+    color: var(--text-light);
+    max-width: 440px;
+    font-size: .95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.texto1 button{
+    background: var(--dark);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    transition: background .25s ease;
+}
+
+.texto1 button:hover{
+    background: #000;
+}
+
+.caja1 img{
+    width: 480px;
+    border: 2px solid #000;
+}
+
+.caja2{
+    background: var(--red);
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.caja2 > p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: .85rem;
+    margin-bottom: 1.2rem;
+}
+
+.texto2{
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--cta-bg);
+    border-radius: 16px;
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.caja3{
+    background: var(--red);
+    color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.branding-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 4rem;
+}
+
+.texto-branding{
+    max-width: 500px;
+}
+
+.texto-branding h2{
+    font-size: 3.2rem;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+}
+
+.texto-branding p{
+    color: var(--text-light);
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.caja3 img{
+    width: 460px;
+}
+
+.caja4{
+    background: var(--red);
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.custom-container h2{
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 15rem;
+    font-weight: 700;
+}
+
+.cards-row{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #FFFFFF;
+    color: #242424;
+    width: 320px;
+    padding: 2.2rem 1.8rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.icono{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.icono i{
+    font-size: 1.4rem;
+}
+
+.cuadro1 .icono{
+    background: #FBE5E0;
+    color: #A83A24;
+}
+
+.cuadro2 .icono{
+    background: #FBF1DE;
+    color: #C08A34;
+}
+
+.cuadro3 .icono{
+    background: #E3EEFA;
+    color: #1F3A5F;
+}
+
+.card p:first-of-type{
+    font-weight: 700;
+    font-size: .9rem;
+    margin-bottom: .8rem;
+    letter-spacing: .5px;
+}
+
+.card p:last-of-type{
+    color: #727272;
+    font-size: .85rem;
+    line-height: 1.6;
+}
+
+.caja5{
+    background: var(--cta-bg);
+    color: #fff;
+    max-width: var(--container);
+    margin: 0 auto 5rem;
+    padding: 3.5rem 4rem;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.caja5 img{
+    width: 450px;
+}
+
+.texto3{
+    max-width: 420px;
+}
+
+.texto3 h2{
+    font-size: 2.8rem;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+
+.texto3 p{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: .95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.texto3 button{
+    background: var(--red);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    transition: background .25s ease;
+}
+
+.texto3 button:hover{
+    background: var(--red-dark);
+}
+
+footer{
+    background: var(--footer-bg);
+    color: #fff;
+    padding: 4.5rem 5%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+footer > div{
+    width: 200px;
+}
+
+footer p:first-child{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+footer p:not(:first-child){
+    color: rgba(255, 255, 255, 0.75);
+    font-size: .9rem;
+    margin-bottom: .8rem;
+    line-height: 1.6;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+footer p:not(:first-child):hover{
+    color: #fff;
+}
+
+@media (max-width: 992px){
+
+    .hero-container,
+    .branding-container,
+    .caja5{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto1 h1{
+        font-size: 2.8rem;
+    }
+
+    .texto-branding h2,
+    .custom-container h2,
+    .texto3 h2{
+        font-size: 2.2rem;
+    }
+
+    .caja5 img,
+    .caja1 img,
+    .caja3 img{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+}
+
